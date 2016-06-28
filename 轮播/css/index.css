@@ -1,0 +1,8 @@
+body, blockquote, a, div, fieldset, h1, h2, h3, hr, ul, ol, li, form, img, p, span, table, tbody, tr, td, th {
+    margin: 0;
+    padding: 0;
+    font-family: helvetica,tahoma,arial,verdana,sans-serif,lucida Grande,lucida sans unicode,times new roman,宋体,新宋体;
+}
+div {
+    width: 100px;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        *{margin:0; padding:0; list-style:none;}
+        #pic{width:200px; height:470px; position:relative; margin:50px auto; overflow:hidden;}
+        #pic ul{width: 200px;}
+        #pic ul li{width:200px; height:94px; padding:5px 0;}
+    </style>
+</head>
+<body>
+<div id="pic">
+    <ul>
+        <li><img src="./images/1.jpg" /></li>
+        <li><img src="./images/2.jpg" /></li>
+        <li><img src="./images/3.jpg" /></li>
+        <li><img src="./images/4.jpg" /></li>
+        <li><img src="./images/5.jpg" /></li>
+    </ul>
+    <ul>
+
+    </ul>
+</div>
+<script>
+    var pic = document.getElementById('pic');
+    var Ul = pic.getElementsByTagName('ul');
+function ff(id, ul) {
+    if (id.getBoundingClientRect().height > ul[0].getBoundingClientRect().height) {
+        return;
+    }
+    ul[1].innerHTML = ul[0].innerHTML;
+    function fn () {
+        if (id.scrollTop == ul[1].offsetTop) {
+            id.scrollTop = 0;
+        }else {
+            id.scrollTop++;
+        }
+    }
+    setInterval(fn, 16);
+}
+ff(pic, Ul);
+
+</script>
+</body>
+</html>
