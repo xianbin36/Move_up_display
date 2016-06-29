@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>腾讯鼠标移上显示图片详情的另一张图片</title>
+    <meta charset="utf-8" content="content">
+    <style>
+    body, div, ul, li, img{
+        margin: 0;
+        padding: 0;
+        border: 0;
+        overflow: hidden;
+    }
+    img{
+        font-size: 0;
+        line-height: 0;
+    }
+    .wrapper {
+        width: 1240px;
+        height: 125px;
+        border: 1px solid red;
+        margin: 0 auto;
+        position: relative;
+    }
+    .no-dis {
+        display: none;
+    }
+    #memu {
+        width: 4000px;
+        position: absolute;
+    }
+    #memu li {
+        display: block;
+        float: left;
+    }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <ul id="memu">
+        <li><img src="image/1.jpg" alt=""><img class="no-dis" src="image/1-1.jpg" alt=""></li>
+        <li><img src="image/2.jpg" alt=""><img class="no-dis" src="image/2-1.jpg" alt=""></li>
+        <li><img src="image/3.jpg" alt=""><img class="no-dis" src="image/3-1.jpg" alt=""></li>
+        <li><img src="image/4.jpg" alt=""><img class="no-dis" src="image/4-1.jpg" alt=""></li>
+        <li><img src="image/5.jpg" alt=""><img class="no-dis" src="image/5-1.jpg" alt=""></li>
+    </ul>
+</div>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
